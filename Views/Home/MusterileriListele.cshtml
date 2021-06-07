@@ -1,0 +1,44 @@
+﻿@model IEnumerable<emlak.Models.Musteri>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MusterileriListele</title>
+    <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="text-center p-2">
+        <h3>Kayıt Olanlar</h3>
+        <table class="table table-bordered table-striped table-sm">
+            <thead>
+                <tr>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Adres</th>
+                    <th>Email</th>
+                    <th>Telefon</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (emlak.Models.Musteri x in Model)
+                {
+                    <tr>
+                        <td>@x.Ad</td>
+                        <td>@x.Soyad</td>
+                        <td>@x.Adres</td>
+                        <td>@x.Email</td>
+                        <td>@x.Telefon</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    
+
+</body>
+</html>

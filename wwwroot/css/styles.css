@@ -1,0 +1,23 @@
+﻿.field-validation-error{
+
+    color: #ff0000;
+
+}
+
+.field-validation-valid{
+    display:none;
+}
+
+.field-validation-error{
+    border: 1px solid #ff0000;
+    background-color: #fee;
+}
+
+.field-validation-errors {
+    font-weight : bold;
+    color: #f00;
+}
+
+.validation-summery-valid {
+    display:none;
+}

@@ -1,0 +1,31 @@
+﻿@model emlak.Models.Musteri
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Teşekkürler</title>
+    <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+</head>
+<body class="text-center">
+    <div>
+        <h1>Kayıt oldugunuz için teşekkürler @Model.Ad @Model.Soyad </h1>
+
+    </div>
+
+    Kayıt olan müşterileri görmek için lütfen <a asp-action="MusterileriListele"> buraya </a> tıklayınız.
+
+    <br />
+    <br />
+
+    Yeni Müsteri Eklemek icin <a asp-action="MusteriKayit">tıklayınız.</a>
+
+
+</body>
+</html>

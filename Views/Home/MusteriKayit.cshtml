@@ -1,0 +1,59 @@
+﻿@model emlak.Models.Musteri
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MusteriKayit</title>
+
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <h5 class="bg-primary text-white text-center m-2 p-2">Musteri Kayit</h5>
+    <form asp-action="MusteriKayit" method="post" class="m-2">
+        <div asp-validation-summary="All"></div>
+        <div class="form-group">
+            <label asp-for="Ad">Adınız:</label>
+            <input asp-for="Ad" class="form-control" />
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Soyad">Soyadınız:</label>
+            <input asp-for="Soyad" class="form-control" />
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Adres">Adresiniz:</label>
+            <input asp-for="Adres"  class="form-control"/>
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email">Email Adresiniz:</label>
+            <input asp-for="Email" class="form-control" />
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Telefon">Telefon Numaranız:</label>
+            <input asp-for="Telefon" class="form-control" />
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+
+    </form>
+
+
+
+</body>
+</html>
